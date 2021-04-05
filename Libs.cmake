@@ -7,7 +7,9 @@ macro(create_lib lib lib_alias)
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>/include
         $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
     )
-
+    include_directories(
+        ${CMAKE_SOURCE_DIR}/src
+    )
     if(ENABLE_COVERAGE)
         target_link_libraries(${lib}
             gcov
