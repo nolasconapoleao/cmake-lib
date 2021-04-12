@@ -1,5 +1,6 @@
 # CPP Check
-set(CMAKE_CXX_CPPCHECK 
+set(CMAKE_CXX_CPPCHECK
+        cppcheck
         "${CMAKE_SOURCE_DIR}/src"
         "${CMAKE_SOURCE_DIR}/libs"
         "${CMAKE_SOURCE_DIR}/tests"
